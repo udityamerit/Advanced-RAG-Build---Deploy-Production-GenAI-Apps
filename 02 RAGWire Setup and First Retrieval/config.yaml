@@ -1,0 +1,34 @@
+loader:
+  extensions: [".pdf", ".docx", ".xlsx", ".pptx", ".txt", ".md"]
+
+splitter:
+  chunk_size: 10000
+  chunk_overlap: 2000
+  strategy: "markdown"   # or "recursive"; "page" stores one chunk per page/slide
+
+embeddings:
+  provider: "ollama"
+  model: "nomic-embed-text:latest"
+  base_url: "http://127.0.0.1:11434"
+
+llm:
+  provider: "ollama"
+  model: "qwen3:8b"
+  base_url: "http://127.0.0.1:11434"
+  num_ctx: 16384
+
+vectorstore:
+  url: "http://localhost:6333"
+  collection_name: "my_docs"
+  use_sparse: true
+  force_recreate: false
+
+retriever:
+  search_type: "hybrid"
+  top_k: 5
+  auto_filter: false   # set true to enable LLM-based filter extraction from every query
+
+logging:
+  level: "INFO"
+  console_output: true
+  colored: true
