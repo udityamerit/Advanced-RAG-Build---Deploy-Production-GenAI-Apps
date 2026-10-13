@@ -1,0 +1,32 @@
+# Core web framework
+fastapi
+
+# LangChain ecosystem
+langchain
+langchain-core
+langchain-google-genai
+langchain-groq
+langchain-ollama
+langchain-openai
+langgraph
+transformers
+
+# Agent frameworks
+crewai
+agent-framework[all]
+autogen-agentchat
+autogen-ext[openai]
+
+# RAG
+ragwire
+
+# Chat frontend
+chainlit
+aiosqlite
+sqlalchemy
+
+# Utilities
+python-dotenv
+httpx
+markdown2
+xhtml2pdf
