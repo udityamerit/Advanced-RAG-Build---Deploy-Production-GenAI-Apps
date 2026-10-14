@@ -19,7 +19,7 @@ llm:
 
 vectorstore:
   url: "http://localhost:6333"
-  collection_name: "my_docs"
+  collection_name: "finance-rag-ollama"
   use_sparse: true
   force_recreate: false
 

@@ -30,3 +30,5 @@ python-dotenv
 httpx
 markdown2
 xhtml2pdf
+
+fastembed-gpu
